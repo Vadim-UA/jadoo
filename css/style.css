@@ -1953,6 +1953,7 @@ html.menu-open .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 25px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -2450,10 +2451,6 @@ html.menu-open .header__menu {
 
   .block-logo-footer__title:not(:last-child) {
     margin-bottom: 2.1875rem;
-  }
-
-  .block-social-footer__icons {
-    gap: 1.5625rem;
   }
 }
 
@@ -3155,10 +3152,6 @@ html.menu-open .header__menu {
   .block-logo-footer__title:not(:last-child) {
     margin-bottom: 0.3125rem;
   }
-
-  .block-social-footer__icons {
-    gap: 0.625rem;
-  }
 }
 
 @media (min-width: 20em) and (max-width: 75em) {
@@ -3623,18 +3616,6 @@ html.menu-open .header__menu {
 @supports not (margin-bottom: clamp( 0.3125rem , -0.3693181818rem  +  3.4090909091vw , 2.1875rem )) {
     .block-logo-footer__title:not(:last-child) {
       margin-bottom: calc(0.3125rem + 1.875 * (100vw - 20rem) / 55);
-    }
-}
-
-@supports (gap: clamp( 0.625rem , 0.2840909091rem  +  1.7045454545vw , 1.5625rem )) {
-    .block-social-footer__icons {
-      gap: clamp( 0.625rem , 0.2840909091rem  +  1.7045454545vw , 1.5625rem );
-    }
-}
-
-@supports not (gap: clamp( 0.625rem , 0.2840909091rem  +  1.7045454545vw , 1.5625rem )) {
-    .block-social-footer__icons {
-      gap: calc(0.625rem + 0.9375 * (100vw - 20rem) / 55);
     }
 }
 }
